@@ -15,7 +15,7 @@ The algorithm follows the idea 'divide and conquer' it will divide problems into
 then conque each one backforwads.
 so below the image will make a lot sense:
 ---
-![Upstream vs Origin](https://raw.githubusercontent.com/Seven-Bi/day_algorithm/Img/note_2.PNG)
+![Upstream vs Origin](https://raw.githubusercontent.com/Seven-Bi/day_algorithm/master/Img/note_2.png)
 
 ---
 <pre><code>
