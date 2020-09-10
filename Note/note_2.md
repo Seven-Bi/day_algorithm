@@ -14,7 +14,7 @@ So instead of built-in funciton used with the preivous solution, there is anothe
 The algorithm follows the idea 'divide and conquer' it will divide problems into sub-problems until can not be divided,
 then conque each one backforwads.
 so below the image will make a lot sense:
----
+
 ![Upstream vs Origin](https://raw.githubusercontent.com/Seven-Bi/day_algorithm/master/Img/note_2.png)
 
 ---
