@@ -10,10 +10,9 @@
 
 ###### Another solution - Backtracking
 
-So instead of built-in funciton used with the preivous solution, there is another way to solve this problem backtracking.
-The algorithm follows the idea 'divide and conquer' it will divide problems into sub-problems until can not be divided,
-then conque each one backforwads.
-so below the image will make a lot sense:
+So instead of built-in funciton used with the preivous solution, there is another way to solve this problem by doing backtracking.
+The algorithm follows the idea 'divide and conquer' it will divide problems into sub-problems until can not be divided, then conque each one backforwads.
+Below the image will make a lot sense:
 
 ![Upstream vs Origin](https://raw.githubusercontent.com/Seven-Bi/day_algorithm/master/Img/note_2.png)
 
@@ -32,12 +31,10 @@ def permutate(array, start): # <- 1
         permutate(array, start+1) # <- 4
         swap(array, index, start) # <- 6
 </code></pre>
+The algorithm process will be:  
+    1 -> 2 -> 3 -> 4   
+    ...  
+    1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 2  
+    ...  
 
-
-The algorithm process will be:
-    1 -> 2 -> 3 -> 4
-    ...
-    1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 2
-    ...
-
-Basically it will go down to the bottom then take the item at that level(horizentally) then iterate it until all the items visited. Next will track back upper level by revise `start` variable.
+Basically it will go down to the bottom then take the item and try to get all possible solutions at that level(horizentally) until we can not get valid solution then `return` to the upper level (this called backtracking) meanwhile we reset things to the upper's level state (in this case we swap back), in this divide and cocuer manner we could find all possible solutions and form our final solution. So far we done exact thing same as Python built-in function `itertools.permutations`.
