@@ -15,12 +15,14 @@ nice to have built-in func to get things easier
 > for h, i, j, k in itertools.permutations(l):
 
 filter requried info
-> hour = h * 10 + i
-> minute = j * 10 + k
-> more filters can come through if needed
-
-think about the base unit we calculate the time
-> max_time = max(max_time, hour * 60 + minute)
+---
+<pre><code>
+for h, i, j, k in itertools.permutations(l):
+	hour = h * 10 + i
+	minute = j * 10 + k
+	if hour < 24 and minute < 60:
+		max_time = max(max_time, hour * 60 + minute)
+</code></pre>
 
 last thing - get data in format 
 > return "{:02d}:{:02d}".format(max_time // 60, max_time % 60)
