@@ -40,4 +40,13 @@ The algorithm process will be:
     1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 2
     ...
 
-Basically it will go down to the bottom then take the item at that level(horizentally) then iterate it until all the items visited. Next will track back upper level by revise `start` variable.
+Basically it will go down to the bottom then take the item at that level(horizentally) then iterate it until all the items visited. Next will track back upper level by revising `start` variable.
+The key concepts and fundamental knowledge about this idea are:
+---
+Function call -> it will be blocked to wait the funciton call finish unless it is asynchronous call so that the funciton call can go
+down to the buttom
+
+Parameters + 1 -> select an opt, enable the algorithm get to traverse items horizentally
+
+Discard the previous select
+---
